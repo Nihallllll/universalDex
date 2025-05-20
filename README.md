@@ -1,39 +1,17 @@
-# <h1 align="center"> Forge Template </h1>
+This is a advance version of simple dex 
 
-**Template repository for getting started quickly with Foundry projects**
+functionalities its includes are :
 
-![Github Actions](https://github.com/foundry-rs/forge-template/workflows/CI/badge.svg)
+Automated market maker 
 
-## Getting Started
+Lquidity pool creation logic
 
-Click "Use this template" on [GitHub](https://github.com/foundry-rs/forge-template) to create a new repository with this repo as the initial state.
+Factory contract to create any pair (unless its an ERC20)
 
-Or, if your repo already exists, run:
-```sh
-forge init
-forge build
-forge test
-```
+Pair contract 
 
-## Writing your first test
+functions like :
 
-All you need is to `import forge-std/Test.sol` and then inherit it from your test contract. Forge-std's Test contract comes with a pre-instatiated [cheatcodes environment](https://book.getfoundry.sh/cheatcodes/), the `vm`. It also has support for [ds-test](https://book.getfoundry.sh/reference/ds-test.html)-style logs and assertions. Finally, it supports Hardhat's [console.log](https://github.com/brockelmore/forge-std/blob/master/src/console.sol). The logging functionalities require `-vvvv`.
-
-```solidity
-pragma solidity 0.8.10;
-
-import "forge-std/Test.sol";
-
-contract ContractTest is Test {
-    function testExample() public {
-        vm.roll(100);
-        console.log(1);
-        emit log("hi");
-        assertTrue(true);
-    }
-}
-```
-
-## Development
-
-This project uses [Foundry](https://getfoundry.sh). See the [book](https://book.getfoundry.sh/getting-started/installation.html) for instructions on how to install and use Foundry.
+add liquidity 
+remove liquidity 
+swap
